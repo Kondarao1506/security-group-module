@@ -9,3 +9,7 @@ variable "environment" { #dev
 variable "component" {
   type = list
 }
+
+variable "vpc_id" {
+  type = string
+}
