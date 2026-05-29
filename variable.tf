@@ -10,6 +10,6 @@ variable "component" {
   type = list
 }
 
-variable "vpc_id" {
+variable "vpcid" {
   type = string
 }
