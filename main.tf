@@ -2,7 +2,7 @@ resource "aws_security_group" "roboshopsg" {
   count = length(var.component)
   name        = "${local.common_name}-${var.component[count.index]}" #roboshop-dev-component-sg 
   description = "Allow TLS inbound traffic and all outbound traffic ${local.common_name}-${var.component[count.index]}" #roboshop-dev-component-sg
-  vpc_id      = var.vpc_id
+  vpc_id      = var.vpc_id 
 
   tags = {
     Name = "${local.common_name}-${var.component[count.index]}" #roboshop-dev-component-sg
